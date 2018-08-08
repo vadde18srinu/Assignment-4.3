@@ -3,6 +3,7 @@
 Get states names with 'w'.
 Get states names with 'W'.
 
+Ans: 
 library(states)
 class(USArrests)
 USArrests
@@ -35,8 +36,9 @@ string within the vector to form a final single string and assigning it the obje
 
 library(ggplot2)
 library(states)
-State=data.frame(states)
-State
+class(USArrests)
+States=rownames(USArrests,do.NULL = TRUE, prefix = "row")
+States
 
 nchar(States, type = "bytes")
 
@@ -48,6 +50,7 @@ hist(c(nchar(States, type = "bytes")),
      xlim=c(3,15),
      ylim =c(0,14),
      las=1,
-     breaks=25)
+     breaks=10)
 
+# Frequency is Number of 8 characters states are 12 states.    
 
