@@ -43,14 +43,15 @@ States
 nchar(States, type = "bytes")
 
 hist(c(nchar(States, type = "bytes")),
-     main="Histogram of number of characters in each US state", 
-     xlab= "States",
+     main="Histogram of each name characters in USstate", 
+     xlab= "Number of Characters",
      border="blue", 
      col="yellow",
      xlim=c(3,15),
-     ylim =c(0,14),
+     ylab = "State Frequency",
+     ylim =c(0,15),
      las=1,
      breaks=10)
 
-# Frequency is Number of 8 characters states are 12 states.    
+# Frequency is Number of "8 characters states" are 12 states.    
 
